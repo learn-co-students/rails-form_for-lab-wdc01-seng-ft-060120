@@ -1,0 +1,15 @@
+<html>
+<head>  
+</head>
+<body>
+<%= yield %>
+</body>
+</html>
+<h2>Student Form</h2>
+<%=form_for @student do |f|%>
+  <%= f.label :first_name, "First Name" %>
+  <%= f.text_field :first_name %>
+  <%= f.label :last_name, "Last Name" %>
+  <%= f.text_field :last_name %>
+  <%= f.submit%>
+<% end %>
